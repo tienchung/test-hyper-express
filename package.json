@@ -1,0 +1,14 @@
+{
+    "name": "your-webservice-name",
+    "version": "1.0.0",
+    "description": "Your awesome web service powered by HyperExpress",
+    "main": "index.js",
+    "scripts": {
+      "start": "node hyper-express.js"
+    },
+    "dependencies": {
+      "hyper-express": "^6.14.2" 
+    },
+    "devDependencies": {
+    }
+  }
