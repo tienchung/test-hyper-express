@@ -29,3 +29,6 @@ docker run --rm -it image_name /bin/sh
 
 ## Open interactive shell session within a running container
 docker exec -it image_name /bin/sh
+
+## Verify Docker CPU Usage
+docker inspect [container-name] | grep NanoCpus
