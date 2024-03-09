@@ -19,6 +19,9 @@ uname -a
 
 ## lists the sizes of all files within folder and sort result in reverse order (-r) and in a human-readable format (-h)
 du -ah /path/to/folder | sort -rh
+- -s: This option summarizes the total disk usage of each specified file or directory.
+- -a: This option displays the disk usage of each file individually, not just directories.
+- -h: This option displays the sizes in a human-readable format (e.g., KB, MB, GB).
 
 # Docker
 ## Run a container with an interactive shell and deleting it after you're finished
