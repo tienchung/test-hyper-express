@@ -30,5 +30,5 @@ docker run --rm -it image_name /bin/sh
 ## Open interactive shell session within a running container
 docker exec -it image_name /bin/sh
 
-## Verify Docker CPU Usage
+## Verify Docker CPU Usage (one billion nano CPUs corresponds to one CPU)
 docker inspect [container-name] | grep NanoCpus
