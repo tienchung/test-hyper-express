@@ -23,6 +23,13 @@ WORKDIR /app
 # Copy necessary files from the builder stage and the rest of the application
 COPY --from=builder /app/node_modules ./node_modules
 
+# Remove unnecessary uWebSockets.js binaries
+RUN rm node_modules/uWebSockets.js/uws_linux_x64_*.node \
+    node_modules/uWebSockets.js/uws_darwin_x64_*.node \
+    node_modules/uWebSockets.js/uws_win32_x64_*.node \
+    node_modules/uWebSockets.js/uws_linux_arm_*.node \
+    node_modules/uWebSockets.js/uws_darwin_arm64_*.node
+    
 # Copy the rest of the application
 COPY . .
 
